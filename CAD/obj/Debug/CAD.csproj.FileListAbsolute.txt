@@ -1,0 +1,9 @@
+C:\Users\ale_s\Documents\Proyectos VisualStudio\catalogoSeriesCRUD\CAD\bin\Debug\CAD.exe.config
+C:\Users\ale_s\Documents\Proyectos VisualStudio\catalogoSeriesCRUD\CAD\bin\Debug\CAD.exe
+C:\Users\ale_s\Documents\Proyectos VisualStudio\catalogoSeriesCRUD\CAD\bin\Debug\CAD.pdb
+C:\Users\ale_s\Documents\Proyectos VisualStudio\catalogoSeriesCRUD\CAD\obj\Debug\CAD.csprojAssemblyReference.cache
+C:\Users\ale_s\Documents\Proyectos VisualStudio\catalogoSeriesCRUD\CAD\obj\Debug\CAD.Properties.Resources.resources
+C:\Users\ale_s\Documents\Proyectos VisualStudio\catalogoSeriesCRUD\CAD\obj\Debug\CAD.csproj.GenerateResource.cache
+C:\Users\ale_s\Documents\Proyectos VisualStudio\catalogoSeriesCRUD\CAD\obj\Debug\CAD.csproj.CoreCompileInputs.cache
+C:\Users\ale_s\Documents\Proyectos VisualStudio\catalogoSeriesCRUD\CAD\obj\Debug\CAD.exe
+C:\Users\ale_s\Documents\Proyectos VisualStudio\catalogoSeriesCRUD\CAD\obj\Debug\CAD.pdb
