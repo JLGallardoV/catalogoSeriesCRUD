@@ -1,0 +1,9 @@
+C:\Users\JLGallardoV\source\repos\catalogoSeriesCRUD\catalogoSeriesCRUD\bin\Debug\catalogoSeriesCRUD.exe.config
+C:\Users\JLGallardoV\source\repos\catalogoSeriesCRUD\catalogoSeriesCRUD\bin\Debug\catalogoSeriesCRUD.exe
+C:\Users\JLGallardoV\source\repos\catalogoSeriesCRUD\catalogoSeriesCRUD\bin\Debug\catalogoSeriesCRUD.pdb
+C:\Users\JLGallardoV\source\repos\catalogoSeriesCRUD\catalogoSeriesCRUD\obj\Debug\catalogoSeriesCRUD.csprojAssemblyReference.cache
+C:\Users\JLGallardoV\source\repos\catalogoSeriesCRUD\catalogoSeriesCRUD\obj\Debug\catalogoSeriesCRUD.Properties.Resources.resources
+C:\Users\JLGallardoV\source\repos\catalogoSeriesCRUD\catalogoSeriesCRUD\obj\Debug\catalogoSeriesCRUD.csproj.GenerateResource.cache
+C:\Users\JLGallardoV\source\repos\catalogoSeriesCRUD\catalogoSeriesCRUD\obj\Debug\catalogoSeriesCRUD.csproj.CoreCompileInputs.cache
+C:\Users\JLGallardoV\source\repos\catalogoSeriesCRUD\catalogoSeriesCRUD\obj\Debug\catalogoSeriesCRUD.exe
+C:\Users\JLGallardoV\source\repos\catalogoSeriesCRUD\catalogoSeriesCRUD\obj\Debug\catalogoSeriesCRUD.pdb
