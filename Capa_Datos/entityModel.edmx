@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="catalogoSeriesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="serie">
+          <Key>
+            <PropertyRef Name="idSerie" />
+          </Key>
+          <Property Name="idSerie" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombreSerie" Type="varchar" MaxLength="100" />
+          <Property Name="anioSerie" Type="varchar" MaxLength="100" />
+          <Property Name="fechaAltaSerie" Type="datetime" />
+          <Property Name="estatusSerie" Type="varchar" MaxLength="100" />
+          <Property Name="portadaSerie" Type="varchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="usuario">
+          <Key>
+            <PropertyRef Name="idUsuario" />
+          </Key>
+          <Property Name="idUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombreUsuario" Type="varchar" MaxLength="100" />
+          <Property Name="direccionUsuario" Type="varchar" MaxLength="100" />
+          <Property Name="telefonoUsuario" Type="varchar" MaxLength="100" />
+          <Property Name="emailUsuario" Type="varchar" MaxLength="100" />
+          <Property Name="contraseniaUsuario" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityContainer Name="catalogoSeriesModelStoreContainer">
+          <EntitySet Name="serie" EntityType="Self.serie" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="usuario" EntityType="Self.usuario" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="catalogoSeriesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="serie">
+          <Key>
+            <PropertyRef Name="idSerie" />
+          </Key>
+          <Property Name="idSerie" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombreSerie" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="anioSerie" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="fechaAltaSerie" Type="DateTime" Precision="3" />
+          <Property Name="estatusSerie" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="portadaSerie" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="usuario">
+          <Key>
+            <PropertyRef Name="idUsuario" />
+          </Key>
+          <Property Name="idUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombreUsuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="direccionUsuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="telefonoUsuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="emailUsuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="contraseniaUsuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="catalogoSeriesEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="serie" EntityType="Self.serie" />
+          <EntitySet Name="usuario" EntityType="Self.usuario" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="catalogoSeriesModelStoreContainer" CdmEntityContainer="catalogoSeriesEntities">
+          <EntitySetMapping Name="serie">
+            <EntityTypeMapping TypeName="catalogoSeriesModel.serie">
+              <MappingFragment StoreEntitySet="serie">
+                <ScalarProperty Name="idSerie" ColumnName="idSerie" />
+                <ScalarProperty Name="nombreSerie" ColumnName="nombreSerie" />
+                <ScalarProperty Name="anioSerie" ColumnName="anioSerie" />
+                <ScalarProperty Name="fechaAltaSerie" ColumnName="fechaAltaSerie" />
+                <ScalarProperty Name="estatusSerie" ColumnName="estatusSerie" />
+                <ScalarProperty Name="portadaSerie" ColumnName="portadaSerie" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="usuario">
+            <EntityTypeMapping TypeName="catalogoSeriesModel.usuario">
+              <MappingFragment StoreEntitySet="usuario">
+                <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+                <ScalarProperty Name="nombreUsuario" ColumnName="nombreUsuario" />
+                <ScalarProperty Name="direccionUsuario" ColumnName="direccionUsuario" />
+                <ScalarProperty Name="telefonoUsuario" ColumnName="telefonoUsuario" />
+                <ScalarProperty Name="emailUsuario" ColumnName="emailUsuario" />
+                <ScalarProperty Name="contraseniaUsuario" ColumnName="contraseniaUsuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
