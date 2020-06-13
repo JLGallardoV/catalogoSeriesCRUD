@@ -56,12 +56,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>entityModel.Context.tt</DependentUpon>
     </Compile>
+    <Compile Include="entityModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>entityModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="entityModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>entityModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="serie.cs">
+      <DependentUpon>entityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usuario.cs">
+      <DependentUpon>entityModel.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="entityModel.edmx">
@@ -80,6 +91,12 @@
     <Content Include="entityModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>entityModel.Context.cs</LastGenOutput>
+      <DependentUpon>entityModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="entityModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>entityModel.edmx</DependentUpon>
+      <LastGenOutput>entityModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
